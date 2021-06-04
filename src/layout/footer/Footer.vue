@@ -6,7 +6,7 @@
             <div class="container">
                 <div class="row row-grid align-items-center my-md">
                     <div class="col-lg-6">
-                        <h3 class="text-primary font-weight-light mb-2">Thank you for supporting us!</h3>
+                        <h3 class="text-primary font-weight-light mb-2"> {{ $t('common:footer.say_thanks') }} </h3>
                         <h4 class="mb-0 font-weight-light">Let's get in touch on any of these platforms.</h4>
                     </div>
                     <div class="col-lg-6 text-lg-center btn-wrapper">
@@ -43,7 +43,7 @@
                              </div>
                              <div class="footer-tittle">
                                  <div class="footer-pera">
-                                     <p class="info1">Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore.</p>
+                                     <p class="info1"> {{ $t('common:footer.logo_info') }}</p>
                                 </div>
                              </div>
                          </div>
@@ -53,11 +53,11 @@
                             <div class="footer-tittle">
                                 <h4>Quick Links</h4>
                                 <ul>
-                                    <li><a href="#">About</a></li>
-                                    <li><a href="#">Features</a></li>
-                                    <li><a href="#">Pricing</a></li>
-                                    <li><a href="#">Download</a></li>
-                                    <li><a href="#">Reviews</a></li>
+                                    <li><a href="#">{{ $t('common:footer.about_us') }} </a></li>
+                                    <li><a href="#">{{ $t('common:footer.features') }} </a></li>
+                                    <li><a href="#">{{ $t('common:footer.prices') }} </a></li>
+                                    <li><a href="#">{{ $t('common:footer.download') }} </a></li>
+                                    <li><a href="#">{{ $t('common:footer.reviews') }} </a></li>
                                 </ul>
                             </div>
                         </div>
@@ -67,11 +67,11 @@
                             <div class="footer-tittle">
                                 <h4>Support</h4>
                                 <ul>
-                                    <li><a href="#">Report a bug</a></li>
-                                    <li><a href="#">Privacy Policy</a></li>
-                                    <li><a href="#">Terms & Conditions</a></li>
-                                    <li><a href="#">Sitemap</a></li>
-                                    <li><a href="#">FAQs</a></li>
+                                    <li><a href="#">{{ $t('common:footer.report_a_bug') }}</a></li>
+                                    <li> <router-link :to="'privacy_policy'"  > {{ $t('common:footer.privacy_policy') }} </router-link>  </li>
+                                    <li><a href="#">{{ $t('common:footer.terms_conditions') }} </a></li>
+                                    <li><a href="#">{{ $t('common:footer.sitemap') }} </a></li>
+                                    <li><a href="#">{{ $t('common:footer.faq') }}FAQs</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -84,9 +84,9 @@
                 <div class="row align-items-center">
                     <div class="col-xl-12 ">
                         <div class="footer-copy-right">
-                           <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-  Copyright &copy;{{year}} All rights reserved | This template is made with <i class="ti-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-  <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+                           <p>
+  Copyright &copy;{{ $t('common:footer.copyright') }}
+</p>
                         </div>
                     </div>
                 </div>
@@ -97,7 +97,9 @@
 
    </footer>
 </template>
+
 <script>
+
 import MailChip from "./components/MailChip";
 export default {
   name: 'app-footer',

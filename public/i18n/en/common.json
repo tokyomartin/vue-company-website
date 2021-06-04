@@ -15,6 +15,21 @@
         "angel": "Angel"
     },
     "footer": {
+        "say_thanks": "Thank you for supporting us!",
+        "logo_info": "Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore.",
+        "about_us": "About Us",
+        "features": "Features",
+        "prices": "Pricing",
+        "download": "Downlad",
+        "reviews": "Reviews",
+        "report_a_bug": "Report a BUG",
+        "privacy_policy": "Privacy Policy",
+        "terms_conditions": "Terms Conditions",
+        "sitemap": "Sitemap",
+        "faq": "FAQS",
+        "copyright": "2009 北京华翔一品电子科技有限公司",
+        "add_email_list": "Heaven fruitful doesn't over lesser in days. Appear",
+
         "report_vulnerability": "Report Vulnerability",
         "twitter": "Twitter",
         "github": "GitHub",
@@ -24,7 +39,7 @@
         "product_hunt": "Product Hunt",
         "facebook": "Facebook",
         "the_ob_organization": "Okuna",
-        "privacy_policy": "Privacy Policy",
+
         "made_with": "Made with ",
         "in_europe": " in Europe",
         "all_rights_reserved": "All Rights Reserved"

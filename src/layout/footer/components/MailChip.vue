@@ -1,9 +1,9 @@
 <template>
-    <div class="single-footer-caption mb-50">
+    <div class="single-footer-caption mb-50"> 
         <div class="footer-tittle">
             <h4>Newsletter</h4>
             <div class="footer-pera footer-pera2">
-             <p>Heaven fruitful doesn't over lesser in days. Appear </p>
+             <p>{{ $t('common:footer.add_email_list') }}</p>
          </div>
          <!-- Form -->
          <div class="footer-form">

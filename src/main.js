@@ -31,7 +31,7 @@ import 'bootstrap-vue/dist/bootstrap-vue.css';
 import VeeValidate from 'vee-validate';
 require('script-loader!raven-js/dist/vue/raven.js');
 import { BootstrapVue, IconsPlugin } from 'bootstrap-vue';
-import Argon from "./plugins/argon-kit";
+import Argon from "./plugins/argon-kit";  // 全局变量
 // Raven loaded through script tag
 const Raven = window['Raven'] || {
     context(startApp) {
@@ -45,7 +45,8 @@ const Raven = window['Raven'] || {
         }
     }
 };
-Raven.config('https://6a956b3aff1f40bb9d75b5f9496b801e@o377184.ingest.sentry.io/5448402').install();
+
+//Raven.config('https://6a956b3aff1f40bb9d75b5f9496b801e@o377184.ingest.sentry.io/5448402').install();
 
 Vue.config.productionTip = false;
 

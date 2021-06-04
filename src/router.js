@@ -12,17 +12,18 @@ const profile = () => import('./views/Profile.vue');
 const login = () => import('./views/login/Login.vue');
 const register = () => import('./views/register/Register.vue');
 const landing = () => import('./views/Landing.vue');
+const privacy_policy = () => import('./views/privacy_policy/PrivacyPolicy.vue');
 
 import i18next from 'i18next';
 import store from './store';
 const locale = require('browser-locale')();
-const supportedLocales = ['en', 'de', 'es', 'fr', 'hu', 'it', 'nl', 'pt-br', 'sv', 'tr'];
+const supportedLocales = ['zh-cn', 'en', 'jp', 'de', 'es', 'fr', 'hu', 'it', 'nl', 'pt-br', 'sv', 'tr'];
 import root from './views/root.vue';
-const browserLang = (locale || 'en-US').substring(0, 2);
+const browserLang = (locale || 'zh-cn').substring(0, 2);
 
 Vue.use(Router);
 const getLocalizedTitle = key => {
-  return (i18next.t(`common:meta.${key}`) + ' | Agrowdev') || 'Agrowdev';
+  return (i18next.t(`common:meta.${key}`) + ' | 华翔一品科技') || '华翔一品科技';
 };
 const router = new Router({
   mode: 'history',
@@ -61,6 +62,10 @@ const router = new Router({
     {
       path: '/careers',
       redirect: `/${browserLang}/careers`
+    },
+    {
+      path: '/privacy_policy',
+      redirect: `/${browserLang}/privacy_policy`
     },
     
     {
@@ -103,6 +108,11 @@ const router = new Router({
           component: careers
         },
         {
+          path: 'privacy_policy',
+          name: 'privacy_policy',
+          component: privacy_policy
+        },
+        {
             path: '*',
             redirect: `/${browserLang}/home`
         }
@@ -138,7 +148,7 @@ router.beforeEach((to, from, next) => {
   }, 500);
 
   if (supportedLocales.indexOf(locale) === -1) {
-      next('/en/home');
+      next('/zh-cn/home');
   } else {
       i18next.changeLanguage(locale);
       return next();

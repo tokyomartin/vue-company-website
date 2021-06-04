@@ -11,11 +11,10 @@
         <div class="container py-0 pb-lg">
             <div class="row justify-content-between align-items-center">
                 <div class="col-lg-5 mb-5 mb-lg-0">
-                    <h1 class="text-white font-weight-light">Bootstrap carousel</h1>
-                    <p class="lead text-white mt-4">Argon Design System comes with four pre-built pages to help you get
-                        started faster. You can change the text and images and you're good to go.</p>
+                    <h1 class="text-white font-weight-light">滚动栏 Bootstrap carousel</h1>
+                    <p class="lead text-white mt-4">设计团队帮忙你快速的设计出好的产品，可以根据你的喜好改变各方面的需求.</p>
                     <a href="https://demos.creative-tim.com/argon-design-system/docs/components/alerts.html"
-                       class="btn btn-white mt-4">See all components</a>
+                       class="btn btn-white mt-4">查看各种组件</a>
                 </div>
                 <div class="col-lg-4 mb-lg-auto">
                     <div class="rounded shadow-lg overflow-hidden transform-perspective-right">

@@ -5,7 +5,7 @@
                 <div class="row d-flex justify-content-center">
                     <div class="col-lg-8 col-md-8">
                         <div class="section-tittle section-tittle2 text-center">
-                            <h2>Choose Your Very <span class="text-success">Best Pricing</span> Plan.</h2>
+                            <h2>{{ $t('home:pricing_area.title') }} </h2>
                         </div>
                     </div>
                 </div>

@@ -11,10 +11,8 @@
                                     <polygon points="0,52 583,95 0,95" class="fill-default"></polygon>
                                     <polygon points="0,42 583,95 683,0 0,95" opacity=".2" class="fill-default"></polygon>
                                 </svg>
-                                <h4 class="display-3 font-weight-bold text-white">Design System</h4>
-                                <p class="lead text-italic text-white">The Arctic Ocean freezes every winter and much of
-                                    the sea-ice then thaws every summer, and that process will continue whatever
-                                    happens.</p>
+                                <h4 class="display-3 font-weight-bold text-white">{{ $t('home:customer_support.title') }} </h4>
+                                <p class="lead text-italic text-white">{{ $t('home:customer_support.desc') }}</p>
                             </blockquote>
                         </div>
                     </div>
@@ -22,14 +20,14 @@
                         <div class="pl-md-5">
                             <icon name="ni ni-settings" class="mb-5" size="lg" type="warning" shadow rounded></icon>
 
-                            <h3>Our customers</h3>
-                            <p class="lead">Don't let your uses guess by attaching tooltips and popoves to any element.
-                                Just make sure you enable them first via JavaScript.</p>
-                            <p>The kit comes with three pre-built pages to help you get started faster. You can change
-                                the text and images and you're good to go.</p>
-                            <p>The kit comes with three pre-built pages to help you get started faster. You can change
-                                the text and images and you're good to go.</p>
-                            <a href="#" class="font-weight-bold text-warning mt-5">A beautiful UI Kit for impactful
+                            <h3> {{ $t('home:customer_support.customer') }} </h3>
+                            <p class="lead"> 
+                              {{ $t('home:customer_support.customer_desc1') }} 
+                               </p>
+                            <p>   {{ $t('home:customer_support.customer_desc2') }} </p>
+                            <p>   {{ $t('home:customer_support.customer_desc3') }} </p>
+
+                            <a href="#" class="font-weight-bold text-warning mt-5"> A beautiful UI Kit for impactful
                                 websites</a>
                         </div>
                     </div>

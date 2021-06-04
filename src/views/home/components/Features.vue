@@ -7,7 +7,7 @@
                         <div class="row">
                             <div class="col-lg-10 col-md-10">
                                 <div class="section-tittle">
-                                    <h2 class="heading">Some of the <span class="text-success">best features</span> Of Our App!</h2>
+                                    <h2 class="heading"> {{ $t('home:features.app_features') }}  </h2>
                                 </div>
                             </div>
                         </div>
@@ -18,7 +18,7 @@
                                     <icon name="ni ni-spaceship" class="icon feature-icon-shape bg-gradient-primary text-white" size="lg" type="primary" shadow
                                         rounded></icon>
                                     <div class="features-caption">
-                                        <h3>Easy to Costomize</h3>
+                                        <h3> {{ $t('home:features.features1') }}</h3>
                                         <p>Aorem psum olorsit amet ectetur adipiscing elit, sed dov.</p>
                                     </div>
                                 </div>
@@ -29,7 +29,7 @@
                                         rounded></icon>
                                     
                                     <div class="features-caption">
-                                        <h3>Extreme Security</h3>
+                                        <h3> {{ $t('home:features.features2') }} </h3>
                                         <p>Aorem psum olorsit amet ectetur adipiscing elit, sed dov.</p>
                                     </div>
                                 </div>
@@ -39,7 +39,7 @@
                                     <icon name="ni ni-spaceship" class="icon feature-icon-shape bg-gradient-danger text-white" size="lg" type="danger" shadow
                                         rounded></icon>
                                     <div class="features-caption">
-                                        <h3>Customer Support</h3>
+                                        <h3> {{ $t('home:features.features3') }} </h3>
                                         <p>Aorem psum olorsit amet ectetur adipiscing elit, sed dov.</p>
                                     </div>
                                 </div>
@@ -49,7 +49,7 @@
                                     <icon name="ni ni-spaceship" class="icon feature-icon-shape bg-gradient-success text-white" size="lg" type="success" shadow
                                         rounded></icon>
                                     <div class="features-caption">
-                                        <h3>Creative Design</h3>
+                                        <h3> {{ $t('home:features.features3') }} </h3>
                                         <p>Aorem psum olorsit amet ectetur adipiscing elit, sed dov.</p>
                                     </div>
                                 </div>

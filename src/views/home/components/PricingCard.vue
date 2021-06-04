@@ -5,7 +5,7 @@
                     <div class="col-xl-4 col-lg-4 col-md-6">
                         <card class="single-card text-center mb-30" hover shadow body-classes="py-5">
                             <div class="card-top">
-                                <span>2 Years</span>
+                                <span>方案1 ： 2 Years</span>
                                 <h4>$05 <span>/ month</span></h4>
                             </div>
                             <div class="card-bottom">
@@ -24,7 +24,7 @@
                     <div class="col-xl-4 col-lg-4 col-md-6">
                         <card class="single-card text-center mb-30" hover shadow body-classes="py-5">
                             <div class="card-top">
-                                <span>2 Years</span>
+                                <span>方案2 ： 2 Years</span>
                                 <h4>$05 <span>/ month</span></h4>
                             </div>
                             <div class="card-bottom">
@@ -43,7 +43,7 @@
                     <div class="col-xl-4 col-lg-4 col-md-6">
                         <card class="single-card text-center mb-30" hover shadow body-classes="py-5">
                             <div class="card-top">
-                                <span>2 Years</span>
+                                <span>方案3 ： 2 Years</span>
                                 <h4>$05 <span>/ month</span></h4>
                             </div>
                             <div class="card-bottom">

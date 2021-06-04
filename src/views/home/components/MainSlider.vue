@@ -1,14 +1,16 @@
 <template>
     <div class="slider-area">
             <div class="slider-active">
+
                 <div class="single-slider slider-height slider-padding d-flex align-items-center ">
                     <div class="container">
+                        <!-- 左侧内容 -->
                         <div class="row d-flex align-items-center">
                             <div class="col-lg-6 col-md-9 app-caption">
                                 <div class="hero__caption">
-                                    <span data-animation="fadeInUp" data-delay=".4s">App Landing Pages</span>
-                                    <h1 data-animation="fadeInUp" data-delay=".6s">Get things done<br>with Appco</h1>
-                                    <p data-animation="fadeInUp" data-delay=".8s">Dorem ipsum dolor sitamet, consectetur adipiscing elit, sed do eiusm tempor incididunt ulabore et dolore magna aliqua.</p>
+                                    <span data-animation="fadeInUp" data-delay=".4s">{{ $t('home:main_slider.app_landing') }} </span>
+                                    <h1 data-animation="fadeInUp" data-delay=".6s">{{ $t('home:main_slider.app_info') }}</h1>
+                                    <p data-animation="fadeInUp" data-delay=".8s" v-html="$t('home:main_slider.app_subinfo')"></p>
                                     <!-- Slider btn -->
                                    <div class="slider-btns row">
                                         <!-- Hero-btn -->
@@ -26,19 +28,20 @@
                         </div>
                     </div>
                 </div> 
+<!--这些可能没用到
                 <div class="single-slider slider-height slider-padding d-flex align-items-center">
                     <div class="container">
                         <div class="row d-flex align-items-center">
                             <div class="col-lg-6 col-md-9 ">
                                 <div class="hero__caption">
-                                    <span data-animation="fadeInUp" data-delay=".4s">App Landing Page</span>
+                                    <span data-animation="fadeInUp" data-delay=".4s">APP启动页1 App Landing Page</span>
                                     <h1 data-animation="fadeInUp" data-delay=".6s">Get things done<br>with Appco</h1>
                                     <p data-animation="fadeInUp" data-delay=".8s">Dorem ipsum dolor sitamet, consectetur adipiscing elit, sed do eiusm tempor incididunt ulabore et dolore magna aliqua.</p>
-                                    <!-- Slider btn -->
+                                    
                                    <div class="slider-btns">
                                         
                                         <a data-animation="fadeInLeft" data-delay="1.0s" href="industries.html" class="btn radius-btn">Download</a>
-                                        <!-- Video Btn -->
+                                       
                                         <a data-animation="fadeInRight" data-delay="1.0s" class="popup-video video-btn ani-btn" href="https://www.youtube.com/watch?v=1aP-TXUpNoU"><i class="fas fa-play"></i></a>
                                    </div>
                                 </div>
@@ -50,7 +53,8 @@
                             </div>
                         </div>
                     </div>
-                </div> 
+                </div> -->
+
             </div>
         </div>
 </template>

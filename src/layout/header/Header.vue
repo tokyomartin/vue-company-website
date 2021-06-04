@@ -22,18 +22,26 @@
                                            
                                         <li><router-link :to="'home'" active-class="is-active is-active--home"> {{ $t('common:header.home') }}</router-link></li>
                                         <li><router-link :to="'about-us'" active-class="is-active is-active--about_us">{{ $t('common:header.about_us') }}</router-link></li>
-                                        <li><router-link :to="'blogs'" active-class="is-active is-active--blogs">Blogs</router-link></li>
-                                        <li><router-link :to="'portfolio'" active-class="is-active is-active--portfolio">Portfolio</router-link></li>
-                                        <li><router-link :to="'contact-us'" active-class="is-active is-active--contact-us">Contact Us</router-link></li>
-                                        <li><router-link :to="'careers'" active-class="is-active is-active--careers">Careers</router-link></li>
+                                        <li><router-link :to="'blogs'" active-class="is-active is-active--blogs">{{ $t('common:header.blog') }}</router-link></li>
+                                        <li><router-link :to="'portfolio'" active-class="is-active is-active--portfolio">{{ $t('common:header.portfolio') }}</router-link></li>
+                                        <li><router-link :to="'contact-us'" active-class="is-active is-active--contact-us">{{ $t('common:header.contact_us') }}</router-link></li>
+                                        <li><router-link :to="'careers'" active-class="is-active is-active--careers">{{ $t('common:header.jobs') }}</router-link></li>
+
+                                        <li><a href="#"> {{ $t('common:header.pages') }} </a>
+                                            <ul class="submenu">
+                                                <li><router-link :to="'contact-us'">{{ $t('common:header.faq') }} Contact</router-link></li>
+                                                <li><router-link :to="'blogdetails'">{{ $t('common:header.home') }}Blog Details</router-link></li>
+                                            </ul>
+                                        </li>
+
                                         <li class="navbar-item select-language is-hidden-touch">
                                             <a class="current-language" slot="trigger">
                                                     <span>{{getCurrentLang(currentLocale)}} <i class="fa fa-angle-down"></i></span>
                                                 </a>
                                             <ul class="is-right submenu">
-                                                
+                                                <li v-bind:class="{ active: currentLocale === 'zh-cn' }" v-on:click="changeLocale('zh-cn')"><a href="#">中文 <i class="fa fa-check"></i></a></li>                                            
                                                 <li v-bind:class="{ active: currentLocale === 'en' }" v-on:click="changeLocale('en')"><a href="#">English <i class="fa fa-check"></i></a></li>
-                                                <li v-bind:class="{ active: currentLocale === 'de' }" v-on:click="changeLocale('de')"><a href="#">Deutsch<i class="fa fa-check"></i></a></li>
+                                                <!-- <li v-bind:class="{ active: currentLocale === 'de' }" v-on:click="changeLocale('de')"><a href="#">Deutsch<i class="fa fa-check"></i></a></li>
                                                 <li v-bind:class="{ active: currentLocale === 'es' }" v-on:click="changeLocale('es')"><a href="#">Español<i class="fa fa-check"></i></a></li>
                                                 <li v-bind:class="{ active: currentLocale === 'fr' }" v-on:click="changeLocale('fr')"><a href="#">Français<i class="fa fa-check"></i></a></li>
                                                 <li v-bind:class="{ active: currentLocale === 'hu' }" v-on:click="changeLocale('hu')"><a href="#">Magyar<i class="fa fa-check"></i></a></li>
@@ -41,13 +49,7 @@
                                                 <li v-bind:class="{ active: currentLocale === 'nl' }" v-on:click="changeLocale('nl')"><a href="#">Nederlands<i class="fa fa-check"></i></a></li>
                                                 <li v-bind:class="{ active: currentLocale === 'pt-br' }" v-on:click="changeLocale('pt-br')"><a href="#">Português (Brasil)<i class="fa fa-check"></i></a></li>
                                                 <li v-bind:class="{ active: currentLocale === 'sv' }" v-on:click="changeLocale('sv')"><a href="#">Svenska<i class="fa fa-check"></i></a></li>
-                                                <li v-bind:class="{ active: currentLocale === 'tr' }" v-on:click="changeLocale('tr')"><a href="#">Türkçe<i class="fa fa-check"></i></a></li>
-                                            </ul>
-                                        </li>
-                                        <li><a href="#">Pages</a>
-                                            <ul class="submenu">
-                                                <li><router-link :to="'contact-us'">Contact</router-link></li>
-                                                <li><router-link :to="'blogdetails'">Blog Details</router-link></li>
+                                                <li v-bind:class="{ active: currentLocale === 'tr' }" v-on:click="changeLocale('tr')"><a href="#">Türkçe<i class="fa fa-check"></i></a></li> -->
                                             </ul>
                                         </li>
                                         <li><DarkModeSwitch @switched="onSwitched" :initialState="isDarkModeEnabled"/></li>
@@ -143,6 +145,8 @@ export default {
   methods: {
             getCurrentLang(locale) {
                 switch (locale.toLowerCase()) {
+                    case 'zh-cn':
+                        return '中文';                    
                     case 'en':
                         return 'English';
                     case 'nl':

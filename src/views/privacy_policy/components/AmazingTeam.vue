@@ -3,8 +3,8 @@
             <div class="container">
                 <div class="row justify-content-center text-center mb-lg">
                     <div class="col-lg-8">
-                        <h2 class="display-3">出色的开发团队</h2>
-                        <p class="lead text-muted"> 国际关系 According to the National Oceanic and Atmospheric Administration,
+                        <h2 class="display-3">The amazing Team</h2>
+                        <p class="lead text-muted">According to the National Oceanic and Atmospheric Administration,
                             Ted, Scambos, NSIDClead scentist, puts the potentially record maximum.</p>
                     </div>
                 </div>
@@ -16,8 +16,8 @@
                                  style="width: 200px;">
                             <div class="pt-4 text-center">
                                 <h5 class="title">
-                                    <span class="d-block mb-1">Tom</span>
-                                    <small class="h6 text-muted">Web开发工程师</small>
+                                    <span class="d-block mb-1">Ryan Tompson</span>
+                                    <small class="h6 text-muted">Web Developer</small>
                                 </h5>
                                 <div class="mt-3">
                                     <base-button tag="a" href="#" type="twitter" icon="fa fa-twitter" rounded
@@ -37,8 +37,8 @@
                                  style="width: 200px;">
                             <div class="pt-4 text-center">
                                 <h5 class="title">
-                                    <span class="d-block mb-1">Robin</span>
-                                    <small class="h6 text-muted">市场策略分析师</small>
+                                    <span class="d-block mb-1">Romina Hadid</span>
+                                    <small class="h6 text-muted">Marketing Strategist</small>
                                 </h5>
                                 <div class="mt-3">
                                     <base-button tag="a" href="#" type="twitter" icon="fa fa-twitter" rounded
@@ -58,8 +58,8 @@
                                  style="width: 200px;">
                             <div class="pt-4 text-center">
                                 <h5 class="title">
-                                    <span class="d-block mb-1">Alexander</span>
-                                    <small class="h6 text-muted">UI/UX 设计师</small>
+                                    <span class="d-block mb-1">Alexander Smith</span>
+                                    <small class="h6 text-muted">UI/UX Designer</small>
                                 </h5>
                                 <div class="mt-3">
                                     <base-button tag="a" href="#" type="twitter" icon="fa fa-twitter" rounded
@@ -79,8 +79,8 @@
                                  style="width: 200px;">
                             <div class="pt-4 text-center">
                                 <h5 class="title">
-                                    <span class="d-block mb-1">John</span>
-                                    <small class="h6 text-muted">创始合伙人</small>
+                                    <span class="d-block mb-1">John Doe</span>
+                                    <small class="h6 text-muted">Founder and CEO</small>
                                 </h5>
                                 <div class="mt-3">
                                     <base-button tag="a" href="#" type="twitter" icon="fa fa-twitter" rounded
