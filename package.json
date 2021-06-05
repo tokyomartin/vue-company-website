@@ -2,9 +2,18 @@
   "name": "vue-argon-design-system",
   "version": "0.1.0",
   "private": true,
+  "config": {
+    "nuxt": {
+      "host": "0.0.0.0",
+      "port": 8080
+    }
+  },
   "scripts": {
+    "dev": "vue-cli-service serve",
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
+    "build:prod": "vue-cli-service build",
+    "build:stage": "vue-cli-service build --mode staging",
+    "preview": "node  dist/index.js --preview",
     "lint": "vue-cli-service lint",
     "start": "node server.js"
   },
