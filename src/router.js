@@ -35,11 +35,23 @@ console.log("langURL: " + langURL);
 
 
 Vue.use(Router);
+
+//BUG 解决vue-router报NavigationDuplicated:
+// Avoided redundant navigation to current location 的问题
+//https://blog.csdn.net/luer_LJS/article/details/108362563
+
+const originalPush = VueRouter.prototype.push
+VueRouter.prototype.push = function push(location) {
+    return originalPush.call(this, location).catch(err => err)
+}
+
 const getLocalizedTitle = key => {
   return (i18next.t(`common:meta.${key}`) + ' | 华翔一品科技') || '华翔一品科技';
 };
+
 const router = new Router({
-  mode: 'history',
+  //mode: 'history',
+    mode: 'hash',
   linkExactActiveClass: "active",
   routes: [
     {
