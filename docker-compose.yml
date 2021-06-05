@@ -6,13 +6,14 @@ services:
       dockerfile: Dockerfile
     working_dir: /home/node/app
       #      restart: always
-    container_name: node_website_v1
+    container_name: website
     ports:
 #      - "8200:8200"
       - "8080:8080"
     volumes:
       - .:/home/node/app
     environment:
-      - NODE_ENV=development
+      #- NODE_ENV=development
+      - NODE_ENV=production
     stdin_open: true
     command: /bin/bash -c  "npm run serve"
