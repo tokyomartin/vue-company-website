@@ -1,4 +1,5 @@
 import Vue from "vue";
+import VueI18n from 'vue-i18n';
 import Router from "vue-router";
 import home from "./views/home/home.vue";
 
@@ -21,8 +22,22 @@ const supportedLocales = ['zh-CN', 'en', 'jp', 'de', 'es', 'fr', 'hu', 'it', 'nl
 import root from './views/root.vue';
 import weekSelectPlugin from "flatpickr/dist/plugins/weekSelect/weekSelect";
 
-//const browserLang = (locale || 'zh-CN').substring(0, 2);
-const browserLang = (locale || 'zh-CN').trim();
+Vue.use(VueI18n);
+
+const i18n = new VueI18n({
+    locale: 'zh-CN',    // 语言标识
+    fallbackLocale: 'zh-CN',//没有英文的时候默认中文语言
+    silentFallbackWarn: true,//抑制警告
+    //this.$i18n.locale // 通过切换locale的值来实现语言切换
+    messages: {
+        'zh-CN': require('./common/lang/zh'),   // 中文语言包
+        'en-US': require('./common/lang/en')    // 英文语言包
+    }
+})
+
+
+const browserLang = (locale || 'zh-CN').substring(0, 2);
+//const browserLang = (locale || 'zh-CN').trim();
 //const browserLang = (locale || 'cn').trim();
 
 var langURL = "";
