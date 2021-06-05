@@ -17,10 +17,10 @@ const privacy_policy = () => import('./views/privacy_policy/PrivacyPolicy.vue');
 import i18next from 'i18next';
 import store from './store';
 const locale = require('browser-locale')();
-const supportedLocales = ['zh-cn', 'en', 'jp', 'de', 'es', 'fr', 'hu', 'it', 'nl', 'pt-br', 'sv', 'tr'];
+const supportedLocales = ['cn', 'en', 'jp', 'de', 'es', 'fr', 'hu', 'it', 'nl', 'pt-br', 'sv', 'tr'];
 import root from './views/root.vue';
 //const browserLang = (locale || 'zh-cn').substring(0, 2);
-const browserLang = (locale || 'zh-cn').trim();
+const browserLang = (locale || 'cn').trim();
 
 Vue.use(Router);
 const getLocalizedTitle = key => {
@@ -149,7 +149,7 @@ router.beforeEach((to, from, next) => {
   }, 500);
 
   if (supportedLocales.indexOf(locale) === -1) {
-      next('/zh-cn/home');
+      next('/cn/home');
   } else {
       i18next.changeLanguage(locale);
       return next();
