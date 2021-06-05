@@ -11,15 +11,15 @@
                                 <a href="index.html"><img src="@/assets/img/logo/logo.png" alt=""></a>
                             </div>
                         </div>
-                        
+
                         <div class="col-xl-10 col-lg-10 col-md-10">
                             <!-- Main-menu -->
-                            
+
                             <div class="main-menu f-right d-none d-lg-block">
                                 <nav id="header-links">
-                                    
+
                                     <ul id="navigation">
-                                           
+
                                         <li><router-link :to="'home'" active-class="is-active is-active--home"> {{ $t('common:header.home') }}</router-link></li>
                                         <li><router-link :to="'about-us'" active-class="is-active is-active--about_us">{{ $t('common:header.about_us') }}</router-link></li>
                                         <li><router-link :to="'blogs'" active-class="is-active is-active--blogs">{{ $t('common:header.blog') }}</router-link></li>
@@ -39,7 +39,7 @@
                                                     <span>{{getCurrentLang(currentLocale)}} <i class="fa fa-angle-down"></i></span>
                                                 </a>
                                             <ul class="is-right submenu">
-                                                <li v-bind:class="{ active: currentLocale === 'zh-cn' }" v-on:click="changeLocale('zh-cn')"><a href="#">中文 <i class="fa fa-check"></i></a></li>                                            
+                                                <li v-bind:class="{ active: currentLocale === 'zh-cn' }" v-on:click="changeLocale('zh-cn')"><a href="#">中文 <i class="fa fa-check"></i></a></li>
                                                 <li v-bind:class="{ active: currentLocale === 'en' }" v-on:click="changeLocale('en')"><a href="#">English <i class="fa fa-check"></i></a></li>
                                                 <!-- <li v-bind:class="{ active: currentLocale === 'de' }" v-on:click="changeLocale('de')"><a href="#">Deutsch<i class="fa fa-check"></i></a></li>
                                                 <li v-bind:class="{ active: currentLocale === 'es' }" v-on:click="changeLocale('es')"><a href="#">Español<i class="fa fa-check"></i></a></li>
@@ -97,7 +97,7 @@ export default {
     } // the `dataset.theme` is the data-theme attribute I set in my SCSS file (highlighted above)
   },
   created() {
-    
+
      $(window).on('scroll', function () {
       var scroll = $(window).scrollTop();
       if (scroll < 245) {
@@ -136,17 +136,17 @@ export default {
             closedSymbol: '+',
             openedSymbol:'-'
         });
-        
+
         };
-        
-        
-       
+
+
+
     },
   methods: {
             getCurrentLang(locale) {
                 switch (locale.toLowerCase()) {
                     case 'zh-cn':
-                        return '中文';                    
+                        return '中文';
                     case 'en':
                         return 'English';
                     case 'nl':
@@ -181,17 +181,17 @@ export default {
                 this.$router.push(`/${locale}/${path}`);
             },
             onSwitched: function (isSwitched) {
-              
+
               if(isSwitched) {
                     this.theme = this.theme === 'light' ? 'dark' : 'light'
-                    localStorage.setItem( 'data-theme', 'dark');   
+                    localStorage.setItem( 'data-theme', 'dark');
                 }
                 else {
                     this.theme = this.theme === 'light' ? 'dark' : 'light'
                     localStorage.setItem('data-theme', 'light');
                 }
             }
-    
+
   },
 };
 </script>
@@ -221,7 +221,7 @@ export default {
     }
     #header-links {
         .is-active {
-            
+
             color: #690ddc !important;
             font-weight: bold;
 

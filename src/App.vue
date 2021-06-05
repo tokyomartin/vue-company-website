@@ -20,13 +20,13 @@
         <div v-else-if="isI18nErrored">Something went wrong...</div>
         <div v-else>
             <b-spinner variant="primary" class="spinners" label="Text Centered"></b-spinner>
-        
+
         </div>
     </div>
 </template>
 <script>
 
-import ScrollTopComponent from './views/components/ScrollTop'
+import ScrollTopComponent from './views/components/ScrollTop';
 import { FadeTransition } from "vue2-transitions";
 
 import AppHeader from "./layout/header/Header"
@@ -38,7 +38,7 @@ export default {
     AppFooter,
     ScrollTopComponent
   },
-  
+
   mounted () {
     //  [App.vue specific] When App.vue is finish loading finish the progress bar
     this.$Progress.finish()

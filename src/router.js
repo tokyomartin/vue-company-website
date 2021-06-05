@@ -19,7 +19,8 @@ import store from './store';
 const locale = require('browser-locale')();
 const supportedLocales = ['zh-cn', 'en', 'jp', 'de', 'es', 'fr', 'hu', 'it', 'nl', 'pt-br', 'sv', 'tr'];
 import root from './views/root.vue';
-const browserLang = (locale || 'zh-cn').substring(0, 2);
+//const browserLang = (locale || 'zh-cn').substring(0, 2);
+const browserLang = (locale || 'zh-cn').trim();
 
 Vue.use(Router);
 const getLocalizedTitle = key => {
@@ -32,9 +33,9 @@ const router = new Router({
     {
       path: '*',
       redirect: `/${browserLang}/home`,
-      
+
     },
-    
+
     {
         path: '/home',
         redirect: `/${browserLang}/home`
@@ -67,7 +68,7 @@ const router = new Router({
       path: '/privacy_policy',
       redirect: `/${browserLang}/privacy_policy`
     },
-    
+
     {
       path: '/:locale',
       component: root,
@@ -116,10 +117,10 @@ const router = new Router({
             path: '*',
             redirect: `/${browserLang}/home`
         }
-          
+
       ]
     },
-    
+
   ],
   scrollBehavior: to => {
     if (to.hash) {
