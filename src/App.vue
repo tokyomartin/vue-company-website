@@ -26,7 +26,7 @@
 </template>
 <script>
 
-import ScrollTopComponent from './views/components/ScrollTop';
+import ScrollTopComponent from './views/components/ScrollTop'
 import { FadeTransition } from "vue2-transitions";
 
 import AppHeader from "./layout/header/Header"

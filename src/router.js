@@ -17,10 +17,22 @@ const privacy_policy = () => import('./views/privacy_policy/PrivacyPolicy.vue');
 import i18next from 'i18next';
 import store from './store';
 const locale = require('browser-locale')();
-const supportedLocales = ['cn', 'en', 'jp', 'de', 'es', 'fr', 'hu', 'it', 'nl', 'pt-br', 'sv', 'tr'];
+const supportedLocales = ['zh-CN', 'en', 'jp', 'de', 'es', 'fr', 'hu', 'it', 'nl', 'pt-br', 'sv', 'tr'];
 import root from './views/root.vue';
-//const browserLang = (locale || 'zh-cn').substring(0, 2);
-const browserLang = (locale || 'cn').trim();
+import weekSelectPlugin from "flatpickr/dist/plugins/weekSelect/weekSelect";
+
+//const browserLang = (locale || 'zh-CN').substring(0, 2);
+const browserLang = (locale || 'zh-CN').trim();
+//const browserLang = (locale || 'cn').trim();
+
+var langURL = "";
+if(browserLang == 'zh-CN')
+     langURL = 'zh-CN';
+else
+    langURL = browserLang;
+
+console.log("langURL: " + langURL);
+
 
 Vue.use(Router);
 const getLocalizedTitle = key => {
@@ -149,7 +161,7 @@ router.beforeEach((to, from, next) => {
   }, 500);
 
   if (supportedLocales.indexOf(locale) === -1) {
-      next('/cn/home');
+      next('/zh-CN/home');
   } else {
       i18next.changeLanguage(locale);
       return next();
