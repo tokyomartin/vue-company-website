@@ -39,7 +39,7 @@
                                                     <span>{{getCurrentLang(currentLocale)}} <i class="fa fa-angle-down"></i></span>
                                                 </a>
                                             <ul class="is-right submenu">
-                                                <li v-bind:class="{ active: currentLocale === 'zh-CN' }" v-on:click="changeLocale('zh-CN')"><a href="#">中文 <i class="fa fa-check"></i></a></li>
+                                                <li v-bind:class="{ active: currentLocale === 'zh-cn' }" v-on:click="changeLocale('zh-cn')"><a href="#">中文 <i class="fa fa-check"></i></a></li>
                                                 <li v-bind:class="{ active: currentLocale === 'en' }" v-on:click="changeLocale('en')"><a href="#">English <i class="fa fa-check"></i></a></li>
                                                 <!-- <li v-bind:class="{ active: currentLocale === 'de' }" v-on:click="changeLocale('de')"><a href="#">Deutsch<i class="fa fa-check"></i></a></li>
                                                 <li v-bind:class="{ active: currentLocale === 'es' }" v-on:click="changeLocale('es')"><a href="#">Español<i class="fa fa-check"></i></a></li>
@@ -145,7 +145,7 @@ export default {
   methods: {
             getCurrentLang(locale) {
                 switch (locale.toLowerCase()) {
-                    case 'zh-CN':
+                    case 'zh-cn':
                         return '中文';
                     case 'en':
                         return 'English';

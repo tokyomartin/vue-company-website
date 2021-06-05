@@ -26,7 +26,7 @@ export default (store) => {
     .use(i18nextBrowserLanguageDetector)
     .use(i18nextXHRBackend)
     .init({
-      fallbackLng: 'zh-CN',
+      fallbackLng: 'zh-cn',
       ns: [ 'common', 'about', 'angel', 'contact', 'faq', 'home', 'jobs', 'manifesto', 'press', 'team', 'vulnerability' ],
       defaultNS: 'common',
       debug: process.env.NODE_ENV !== 'production',

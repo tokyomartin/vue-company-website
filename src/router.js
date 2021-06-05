@@ -36,17 +36,17 @@ const i18n = new VueI18n({
 })
 
 
-const browserLang = (locale || 'zh-CN').substring(0, 2);
+const browserLang = (locale || 'zh-cn').substring(0, 2);
 //const browserLang = (locale || 'zh-CN').trim();
 //const browserLang = (locale || 'cn').trim();
 
-var langURL = "";
-if(browserLang == 'zh-CN')
-     langURL = 'zh-CN';
-else
-    langURL = browserLang;
+// var langURL = "";
+// if(browserLang == 'zh-CN')
+//      langURL = 'zh-CN';
+// else
+//     langURL = browserLang;
 
-console.log("langURL: " + langURL);
+//console.log("langURL: " + langURL);
 
 
 Vue.use(Router);
@@ -188,7 +188,7 @@ router.beforeEach((to, from, next) => {
   }, 500);
 
   if (supportedLocales.indexOf(locale) === -1) {
-      next('/zh-CN/home');
+      next('/zh-cn/home');
   } else {
       i18next.changeLanguage(locale);
       return next();
