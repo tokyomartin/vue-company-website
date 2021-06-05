@@ -1,0 +1,70 @@
+{
+    "global": {
+        "okuna": "Okuna"
+    },
+    "header": {
+        "home": "首页",
+        "about_us": "关于我们",
+        "manifesto": "Manifesto",
+        "blog": "动态",
+        "portfolio": "图片集锦",
+        "contact_us": "联系我们",
+        "jobs": "工作机会",
+        "faq": "问答",
+        "press": "Press",
+        "language": "Language",
+        "pages": "其他",  
+        "angel": "Angel"       
+    },
+    "footer": {
+        "say_thanks": "谢谢您的支持！",
+        "logo_info": "真诚！互惠！互助！共赢！",
+        "about_us": "关于我们",
+        "features": "功能",
+        "prices": "价格",
+        "download": "下载",
+        "reviews": "浏览",
+        "report_a_bug": "提交BUG",
+        "privacy_policy": "隐私政策",
+        "terms_conditions": "合作政策",
+        "sitemap": "地图导航",
+        "faq": "问答",
+        "copyright": "2009 北京华翔一品电子科技有限公司",
+        "add_email_list": "加入邮箱列表",
+
+        "report_vulnerability": "Report Vulnerability",
+        "twitter": "Twitter",
+        "github": "GitHub",
+        "reddit": "Reddit",
+        "gitter": "Gitter",
+        "linked_in": "LinkedIn",
+        "product_hunt": "Product Hunt",
+        "facebook": "Facebook",
+        "the_ob_organization": "Okuna",
+
+        "made_with": "Made with ",
+        "in_europe": " in Europe",
+        "all_rights_reserved": "All Rights Reserved"
+    },
+    "hud": {
+        "share": "分享",
+        "share_fb": "分享到Facebook",
+        "share_twitter": "分享到Twitter",
+        "share_email": "Send e-mail",
+        "share_linkedin": "分享到LinkedIn",
+        "share_wa": "分享到Whatsapp",
+        "share_title": "华人圈. 社交网络.",
+        "share_description": "Honest, personal, privacy-friendly and ethically sustained.",
+        "share_quote": "加入我们，拥有无穷的力量."
+    },
+    "meta": {
+        "home": "首页",
+        "about-us": "关于我们",
+        "contact-us": "联系我们",
+        "faq": "问答",
+        "angel": "Angel",
+        "getapp": "获取App链接",
+        "vulnerability-report": "Report vulnerability",
+        "manifesto": "Manifesto"
+    }
+}
