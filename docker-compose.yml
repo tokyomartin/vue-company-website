@@ -1,0 +1,18 @@
+version: "3.7"
+services:
+  node_website:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    working_dir: /home/node/app
+      #      restart: always
+    container_name: node_website_v1
+    ports:
+#      - "8200:8200"
+      - "8080:8080"
+    volumes:
+      - .:/home/node/app
+    environment:
+      - NODE_ENV=development
+    stdin_open: true
+    command: /bin/bash -c  "npm run serve"
