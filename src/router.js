@@ -18,35 +18,36 @@ const privacy_policy = () => import('./views/privacy_policy/PrivacyPolicy.vue');
 import i18next from 'i18next';
 import store from './store';
 const locale = require('browser-locale')();
-const supportedLocales = ['zh-CN', 'en', 'jp', 'de', 'es', 'fr', 'hu', 'it', 'nl', 'pt-br', 'sv', 'tr'];
+const supportedLocales = ['zh', 'zh-cn',  'en', 'jp', 'de', 'es', 'fr', 'hu', 'it', 'nl', 'pt-br', 'sv', 'tr'];
 import root from './views/root.vue';
 import weekSelectPlugin from "flatpickr/dist/plugins/weekSelect/weekSelect";
 
-Vue.use(VueI18n);
-
-const i18n = new VueI18n({
-    locale: 'zh-CN',    // 语言标识
-    fallbackLocale: 'zh-CN',//没有英文的时候默认中文语言
-    silentFallbackWarn: true,//抑制警告
-    //this.$i18n.locale // 通过切换locale的值来实现语言切换
-    messages: {
-        'zh-CN': require('./common/lang/zh'),   // 中文语言包
-        'en-US': require('./common/lang/en')    // 英文语言包
-    }
-})
+// Vue.use(VueI18n);
+//
+// const i18n = new VueI18n({
+//     locale: 'zh-CN',    // 语言标识
+//     fallbackLocale: 'zh-CN',//没有英文的时候默认中文语言
+//     silentFallbackWarn: true,//抑制警告
+//     //this.$i18n.locale // 通过切换locale的值来实现语言切换
+//     messages: {
+//         'zh-CN': require('./common/lang/zh'),   // 中文语言包
+//         'en-US': require('./common/lang/en')    // 英文语言包
+//     }
+// })
 
 
 const browserLang = (locale || 'zh-cn').substring(0, 2);
 //const browserLang = (locale || 'zh-CN').trim();
 //const browserLang = (locale || 'cn').trim();
 
-// var langURL = "";
-// if(browserLang == 'zh-CN')
-//      langURL = 'zh-CN';
-// else
-//     langURL = browserLang;
+let langURL = "";
+if(browserLang == 'zh-CN')
+     langURL = 'zh-CN';
+else
+    langURL = browserLang;
 
-//console.log("langURL: " + langURL);
+console.log("browserLang: " + browserLang);
+console.log("langURL: " + langURL);
 
 
 Vue.use(Router);
@@ -55,8 +56,8 @@ Vue.use(Router);
 // Avoided redundant navigation to current location 的问题
 //https://blog.csdn.net/luer_LJS/article/details/108362563
 
-const originalPush = VueRouter.prototype.push
-VueRouter.prototype.push = function push(location) {
+const originalPush = Router.prototype.push
+Router.prototype.push = function push(location) {
     return originalPush.call(this, location).catch(err => err)
 }
 
@@ -172,6 +173,10 @@ const router = new Router({
 
 router.beforeEach((to, from, next) => {
   let locale = to.params.locale;
+
+  // console.log("locale:" , locale);
+  //   console.log("to:" , to);
+
   if (!locale && to.name === 'manifesto') {
       locale = to.path.split('/')[1];
   } else if (!locale) {
@@ -188,9 +193,11 @@ router.beforeEach((to, from, next) => {
   }, 500);
 
   if (supportedLocales.indexOf(locale) === -1) {
-      next('/zh-cn/home');
+      // console.log("have not supported locale, next to /zh/home:" , locale);
+      next('/zh/home');
   } else {
       i18next.changeLanguage(locale);
+      console.log("change lang to locale, next():" , locale);
       return next();
   }
 });
