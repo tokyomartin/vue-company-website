@@ -16,7 +16,7 @@
 # 1 项目目录下： router.js
 
 ## 添加支持的语言
-const supportedLocales = ['zh-cn', 'en', 'jp', 'de', 'es', 'fr', 'hu', 'it', 'nl', 'pt-br', 'sv', 'tr'];
+const supportedLocales = ['zh', 'en', 'jp', 'de', 'es', 'fr', 'hu', 'it', 'nl', 'pt-br', 'sv', 'tr'];
 
 增加组件页面时
 需要添加

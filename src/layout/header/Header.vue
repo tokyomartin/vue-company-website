@@ -145,6 +145,8 @@ export default {
   methods: {
             getCurrentLang(locale) {
                 switch (locale.toLowerCase()) {
+                    case 'zh':
+                      return '中文';
                     case 'zh-cn':
                         return '中文';
                     case 'en':

@@ -36,7 +36,7 @@ import weekSelectPlugin from "flatpickr/dist/plugins/weekSelect/weekSelect";
 // })
 
 
-const browserLang = (locale || 'zh-cn').substring(0, 2);
+const browserLang = (locale || 'zh').substring(0, 2);
 //const browserLang = (locale || 'zh-CN').trim();
 //const browserLang = (locale || 'cn').trim();
 
