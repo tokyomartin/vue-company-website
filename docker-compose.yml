@@ -13,7 +13,7 @@ services:
     volumes:
       - .:/home/node/app
     environment:
-      #- NODE_ENV=development
-      - NODE_ENV=production
+      - NODE_ENV=development
+      #- NODE_ENV=production
     stdin_open: true
     command: /bin/bash -c  "npm run serve"
