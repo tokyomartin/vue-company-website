@@ -1,12 +1,12 @@
-const PerfHintsPlugin = require("perf-hints-plugin");
+// const PerfHintsPlugin = require("perf-hints-plugin");
 
 module.exports = {
-    plugins: [
-      new PerfHintsPlugin({
-        hints: true,
-        maxBundleSize: 500 // kB
-      })
-    ],
+    // plugins: [
+    //   new PerfHintsPlugin({
+    //     hints: true,
+    //     maxBundleSize: 500 // kB
+    //   })
+    // ],
     module: {
       rules: [
         {
