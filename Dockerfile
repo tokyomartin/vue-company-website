@@ -5,6 +5,7 @@ RUN apk update && apk upgrade && \
     apk add --no-cache bash git openssh yarn python vim
 
 
-RUN npm install
+RUN npm install @vue/cli-service -g
+RUN npm install vue-cli -g
 
 EXPOSE 8080

@@ -97,7 +97,19 @@ App运用自己的系统通过互联网络为用户提供业务订位、业务�
 </h6>
                                     </div>
                                 </li>
-                           
+                              <li class="py-2">
+                                <div class="d-flex align-items-center">
+                                  <badge type="primary" circle class="mr-3 bg-gradient-primary text-white" icon="ni ni-satisfied"></badge>
+                                  <h6 class="mb-0">七、安全规范条款 <br>
+                                    1 用户使用APP时， 不能发布令人反感的内容， 不能滥用APP发一些有害内容。<br>
+                                    2 APP中有拉进“黑名单”的功能，如有发现不当言论，和危险用户， 请举报发给我们，拉黑用户。<br>
+                                    3 一旦发现用户滥发有害信息， 开发人员有权在24小时内，删除有害内容。 并提出有问题的用户，处理令人不快的内容报告。<br>
+                                    4 APP用户可以屏蔽其他用户信息<br>
+                                    5 可以屏蔽其他用户的动态<br>
+                                    6 可以屏蔽其他用户的所有动态<br>
+                                  </h6>
+                                </div>
+                              </li>
                             </ul>
                         </div>
                     </div>
