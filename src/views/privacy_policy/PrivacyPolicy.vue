@@ -30,6 +30,9 @@ App运用自己的系统通过互联网络为用户提供业务订位、业务�
 </h6>
                                     </div>
                                 </li>
+
+
+
                                 <li class="py-2">
                                     <div class="d-flex align-items-center">
                                         <badge type="warning" circle class="mr-3 bg-gradient-warning text-white" icon="ni ni-html5"></badge>
@@ -42,6 +45,9 @@ App运用自己的系统通过互联网络为用户提供业务订位、业务�
 在此情况下，我方APP没有义务传送任何未处理的信息或未完成的服务给您或任何无直接关联的第三方。</h6>
                                     </div>
                                 </li>
+
+
+
                                 <li class="py-2">
                                     <div class="d-flex align-items-center">
                                         <badge type="primary" circle class="mr-3 bg-gradient-primary text-white" icon="ni ni-satisfied"></badge>
@@ -57,10 +63,24 @@ App运用自己的系统通过互联网络为用户提供业务订位、业务�
 3、您应当妥善保管您的设备和密码及身份信息，对于因密码泄露、身份信息泄露、设备丢失所致的损失，由您自行承担。</h6>
                                     </div>
                                 </li>
+                              <li class="py-2">
+                                <div class="d-flex align-items-center">
+                                  <badge type="primary" circle class="mr-3 bg-gradient-primary text-white" icon="ni ni-satisfied"></badge>
+                                  <h6 class="mb-0">四、安全规范条款 <br>
+                                    1 用户使用APP时， 不能发布令人反感的内容， 不能滥用APP发一些有害内容。<br>
+                                    2 APP中有拉进“黑名单”的功能，如有发现不当言论，和危险用户， 请举报发给我们，拉黑用户。<br>
+                                    3 一旦发现用户滥发有害信息， 开发人员有权在24小时内，删除有害内容。 并提出有问题的用户，处理令人不快的内容报告。<br>
+                                    4 APP用户可以屏蔽其他用户信息<br>
+                                    5 可以屏蔽其他用户的动态<br>
+                                    6 可以屏蔽其他用户的所有动态<br>
+                                  </h6>
+                                </div>
+                              </li>
+
                                 <li class="py-2">
                                     <div class="d-flex align-items-center">
                                         <badge type="primary" circle class="mr-3 bg-gradient-primary text-white" icon="ni ni-satisfied"></badge>
-                                        <h6 class="mb-0">四、用户行为规范，除非法律允许或本公司书面许可，您使用本软件过程中不得从事下列行为：<br>
+                                        <h6 class="mb-0">五、用户行为规范，除非法律允许或本公司书面许可，您使用本软件过程中不得从事下列行为：<br>
 1、删除本软件及其副本上关于著作权的信息。<br>
 2、对本软件进行反向工程、反向汇编、反向编译，或者以其他方式尝试发现本软件的源代码。<br>
 3、对本公司拥有知识产权的内容进行使用、出租、出借、复制、修改、链接、转载、汇编、发表、出版、建立镜像站点等。<br>
@@ -75,7 +95,7 @@ App运用自己的系统通过互联网络为用户提供业务订位、业务�
                                <li class="py-2">
                                     <div class="d-flex align-items-center">
                                         <badge type="primary" circle class="mr-3 bg-gradient-primary text-white" icon="ni ni-satisfied"></badge>
-                                        <h6 class="mb-0">五、适用法律和管辖权<br>
+                                        <h6 class="mb-0">六、适用法律和管辖权<br>
 1、APP注册所在地法律、法规应规范本协议以及本协议各方之间引起的争议，除非存在法律指定适用其他管辖法律。<br>
 2、在合约一方寻求实现本协议下的权利，或寻求宣告本协议下的任何权利或义务的任何民事诉讼或其他诉讼过程中，各合约方应承担其代理律师的费用和支出。<br>
 3、本协议的解释语言应为中文。<br>
@@ -87,7 +107,7 @@ App运用自己的系统通过互联网络为用户提供业务订位、业务�
                                 <li class="py-2">
                                     <div class="d-flex align-items-center">
                                         <badge type="primary" circle class="mr-3 bg-gradient-primary text-white" icon="ni ni-satisfied"></badge>
-                                        <h6 class="mb-0">六、免责条款 <br>
+                                        <h6 class="mb-0">七、免责条款 <br>
 1、APP旨在为客户提供交易和拜访服务，平台不对您个人损失负责，也不会对因为您使用个人系统交易而产生的费用和开支负责。<br>
 2、由于用户使用个人配置交易系统产生的所有产品交易指令，都被视为您已授权执行。您必须理解并同意基于APP提供的信息，而使用个人配置交易系统和交易跟随系统所产生的所有风险需您自行承担。<br>
 本网站不对交易系统的指令负责。您应承担由于使用个人配置交易程序产生的一切后果。本网站不会对您的损失负责，也不会对因为您使用个人系统交易而产生的费用和开支负责。<br>
@@ -97,19 +117,7 @@ App运用自己的系统通过互联网络为用户提供业务订位、业务�
 </h6>
                                     </div>
                                 </li>
-                              <li class="py-2">
-                                <div class="d-flex align-items-center">
-                                  <badge type="primary" circle class="mr-3 bg-gradient-primary text-white" icon="ni ni-satisfied"></badge>
-                                  <h6 class="mb-0">七、安全规范条款 <br>
-                                    1 用户使用APP时， 不能发布令人反感的内容， 不能滥用APP发一些有害内容。<br>
-                                    2 APP中有拉进“黑名单”的功能，如有发现不当言论，和危险用户， 请举报发给我们，拉黑用户。<br>
-                                    3 一旦发现用户滥发有害信息， 开发人员有权在24小时内，删除有害内容。 并提出有问题的用户，处理令人不快的内容报告。<br>
-                                    4 APP用户可以屏蔽其他用户信息<br>
-                                    5 可以屏蔽其他用户的动态<br>
-                                    6 可以屏蔽其他用户的所有动态<br>
-                                  </h6>
-                                </div>
-                              </li>
+
                             </ul>
                         </div>
                     </div>
