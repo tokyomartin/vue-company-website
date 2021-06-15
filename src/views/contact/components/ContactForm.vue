@@ -9,14 +9,14 @@
                         <h4>Thank you for your interest. <br>Please fill out the form below to inquire about our work in Digital.</h4>
                     </div>
                     <form class="form-contact contact_form" @submit.prevent="onSubmit()">
-                    
+
                         <div class="row">
                             <div class="col-lg-6">
                                 <div class="form-group">
-                                    <input  type="text" 
+                                    <input  type="text"
                                             v-validate="'required|min:3|max:34'"
-                                            class="form-control mb-30" 
-                                            name="name" 
+                                            class="form-control mb-30"
+                                            name="name"
                                             placeholder="Name"
                                             v-model="name"
                                             id="name">
@@ -156,10 +156,10 @@
                                     </a>
                                 </div>
                                 <div class="pl-2">
-                                    <button class="btn info-border btn-info e-large" 
+                                    <button class="btn info-border btn-info e-large"
                                             type="submit"
                                             :disabled="(formWasSubmitted && !formIsValid) || submissionInProgress || !acceptedRecaptcha"
-                            
+
                                     >{{ $t('contact:message.submit') }}</button>
                                 </div>
                             </div>
@@ -173,21 +173,21 @@
                 <div class="media contact-info">
                     <span class="contact-info__icon"><i class="fa fa-home"></i></span>
                     <div class="media-body">
-                        <h3>3rd stage, Koramangala, Bangalore.</h3>
-                            <p>Rosemead, CA 91770</p>
+                        <h3>北京海淀区西土城8号院1号楼1单元102</h3>
+                            <p>邮编 100088</p>
                     </div>
                 </div>
                 <div class="media contact-info">
                     <span class="contact-info__icon"><i class="fa fa-tablet"></i></span>
                     <div class="media-body">
-                        <h3>+91 953 568 8928</h3>
-                        <p>Mon to Fri 9am to 6pm</p>
+                        <h3>+86-010-53328112</h3>
+                        <p>136-9920-4528/188-8883-1539</p>
                     </div>
                 </div>
                 <div class="media contact-info">
                     <span class="contact-info__icon"><i class="fa fa-envelope"></i></span>
                     <div class="media-body">
-                        <h3>support@agrowdev.tech</h3>
+                        <h3>shenkm@ioinds.com</h3>
                         <p>Send us your query anytime!</p>
                     </div>
                 </div>
